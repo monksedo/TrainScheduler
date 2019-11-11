@@ -13,15 +13,59 @@
 
 <body>
   <div class="container">
-    <div class="header">
-      <h1 class="header-title">Train Scheduler</h1>
+    <div class="main-content">
+      <div class="header">
+        <h1 class="header-title">Train Scheduler</h1>
+        <h3 class="header-station">Statetion Name</h3>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3>Current Train Sshedule</h3>
+        </div>
+        <div class="card-body">
+          <table>
+            <thead>
+              <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Prequency (min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3>Add Train / Schedule</h3>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="input-style">
+              <label for="train-name">Train Name</label>
+              <input class="input-field" id="train-name" placeholder="Train name" type="text">
+            </div>
+            <div class="input-style">
+              <label for="train-destination">Destination</label>
+              <input class="input-field" id="train-destination" placeholder="Train Destination" type="text">
+            </div>
+            <div class="input-style">
+              <label for="train-time">First Train Time</label>
+              <input class="input-field" id="train-time" placeholder="Train Time" type="text">
+            </div>
+            <div class="input-style">
+              <label for="train-frequence">First Train Time</label>
+              <input class="input-field" id="train-frequency" placeholder="Train Frequency" type="text">
+            </div>
+            <button id="btn-submit">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
-
-
-
-
-
-
+    <footer>
+      &copy; Chris N.
+    </footer>
   </div>
   <script src="javascript/trainscheduler.js"></script>
 </body>
