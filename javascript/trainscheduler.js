@@ -19,7 +19,7 @@ $('#btn-submit').on('click', function (event) {
 
   var trainName = $('#train-name').val().trim();
   var trainDest = $('#train-destination').val().trim();
-  var trainTime = moment($('#train-time').val().trim(), '01:15:30 AM').format('LTS');
+  var trainTime = $('#train-time').val().trim();
   var trainFreq = $('#train-frequency').val().trim();
 
   // Creates local object for holding train schedule data
@@ -45,7 +45,6 @@ $('#btn-submit').on('click', function (event) {
   $('#train-destination').val('');
   $('#train-time').val('');
   $('#train-frequency').val('');
-
 });
 
 // Create Firebase event for adding train schedule to database and table in HTML
@@ -66,7 +65,7 @@ database.ref().on('child_added', function (childSnapshot) {
 
   function newSchedule() {
     var currentTime = moment().format('HH:mm');
-    console.log("Current Time is: " + currentTime);
+    console.log('Current Time is: ' + currentTime);
   }
 
   // Time Schedule 
@@ -74,11 +73,7 @@ database.ref().on('child_added', function (childSnapshot) {
   var firstTimeConverted = moment(trainTime, 'HH:mm').subtract(1, 'years');
   console.log(firstTimeConverted);
   newSchedule();
-  // Current Time
-  /*
-  var currentTime = moment();
-  console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
-*/
+
   // Difference between the times
   var diffTime = moment().diff(moment(firstTimeConverted), 'minutes');
   console.log('DIFFERENCE IN TIME: ' + diffTime);
@@ -94,7 +89,7 @@ database.ref().on('child_added', function (childSnapshot) {
   // Next Train
   var nextTrain = moment().add(tMinutesTillTrain, 'minutes');
   var nextTrainTime = moment(nextTrain).format('HH:mm');
-  console.log("ARRIVAL TIME: " + moment(nextTrainTime).format("hh:mm"));
+  console.log('ARRIVAL TIME: ' + moment(nextTrainTime).format('hh:mm'));
 
   // Create the new row for new train schedule data
   var newRow = $('<tr>').append(
