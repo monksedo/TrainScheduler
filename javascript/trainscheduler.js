@@ -1,12 +1,12 @@
 // 1. Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyByAsZSDLyQg7tjm7igrC11URk2C8YnofE",
-  authDomain: "grand-practice-252422.firebaseapp.com",
-  databaseURL: "https://grand-practice-252422.firebaseio.com",
-  projectId: "grand-practice-252422",
-  storageBucket: "grand-practice-252422.appspot.com",
-  messagingSenderId: "440644338208",
-  appId: "1:440644338208:web:48cd83a66a3298c3a77245"
+  apiKey: "AIzaSyDs8yuTHkXXZnrOxlWlVdjBIb1zbT-DzFE",
+  authDomain: "push-d9ebe.firebaseapp.com",
+  databaseURL: "https://push-d9ebe.firebaseio.com",
+  projectId: "push-d9ebe",
+  storageBucket: "push-d9ebe.appspot.com",
+  messagingSenderId: "11060758938",
+  appId: "1:11060758938:web:94e31a34229ab0e6db1223"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -48,7 +48,6 @@ $('#btn-submit').on('click', function (event) {
 
 });
 
-/*
 // Create Firebase event for adding train schedule to database and table in HTML
 database.ref().on('child_added'), function (childSnapshot) {
   console.log(childSnapshot.val());
@@ -79,5 +78,3 @@ database.ref().on('child_added'), function (childSnapshot) {
   $('#train-schedule-table > tbody').append(newRow);
 
 });
-
-*/
