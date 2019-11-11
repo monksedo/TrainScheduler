@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <title>Train Scheduler</title>
@@ -23,7 +24,7 @@
           <h3>Current Train Sshedule</h3>
         </div>
         <div class="card-body">
-          <table>
+          <table id="train-schedule-table">
             <thead>
               <tr>
                 <th>Train Name</th>
@@ -33,6 +34,8 @@
                 <th>Minutes Away</th>
               </tr>
             </thead>
+            <tbody>
+            </tbody>
           </table>
         </div>
       </div>
