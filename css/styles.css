@@ -85,7 +85,7 @@ th {
 
 td {
   padding: 3px 10px;
-  border-bottom: 1px solid #ffffffb4;
+  border-bottom: 1px solid #ffffffb5;
 }
 
 tr:hover {
@@ -115,6 +115,11 @@ button {
   border: none;
   border-radius: 3px;
   background-color: #5c5c5c86;
+}
+
+button:hover {
+  background-color: #ffffffb5;
+  color: #000000bb;
 }
 
 ul,
