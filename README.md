@@ -8,7 +8,7 @@ Requirement/Spec - User should be able to add and submit
 
 Code - calculate when the next train will arrive: this should be relative to the current time.
 Users - from many different machine must be able to view the same times
-Style - Styling and them are completely up to creativities.
+Style - Styling and theme are completely up to creativities.
 
 ## User Features
 1. User can input Train station name
@@ -31,7 +31,7 @@ Style - Styling and them are completely up to creativities.
 ### Core Firebase Connection 
 ![](img/tainscheduljs01.jpg)
 
-### Code block for data storage update
+### Code block for schedule time conversion
 ![](img/tainscheduljs02.jpg)
 
 ## App Screenshot
