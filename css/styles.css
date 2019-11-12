@@ -88,6 +88,9 @@ td {
   border-bottom: 1px solid #ffffffb4;
 }
 
+tr:hover {
+  background-color: #57575777;
+}
 img {
    display: flex;
    flex-direction: column;
