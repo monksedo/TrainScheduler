@@ -25,7 +25,7 @@ Style - Styling and theme are completely up to creativities.
 * FireBase for cloud data storage
 
 ## Test out the app
-[click to run](https://monksedo.github.io/TrainScheduler/)
+[click to run](https://tvn9.github.io/TrainScheduler/)
 
 ## CSS/Javascript Snippet
 ### Core Firebase Connection 
